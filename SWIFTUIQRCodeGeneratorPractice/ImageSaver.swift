@@ -20,12 +20,14 @@ class ImageSaver: NSObject, ObservableObject {
             return
         }
         
-        PHPhotoLibrary.requestAuthorization(for: .addOnly) { status in
+        PHPhotoLibrary.requestAuthorization(for: .addOnly) { [weak self] status in
             DispatchQueue.main.async {
-                self.saveImage(image: image, withLable: imageLabel?)
-                return
+                if status == .authorized{
+                    self?.saveImage(image: image, withLable: imageLabel)
+                    return
+                }
+                self?.saveResult = ImageSaveResult(saveStatus: .libraryPermissionDenied)
             }
-            self.saveResult = ImageSaveResult(saveStatus: .libraryPermissionDenied)
         }
     }
     
