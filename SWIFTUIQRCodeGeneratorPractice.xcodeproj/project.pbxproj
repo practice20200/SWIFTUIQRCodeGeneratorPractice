@@ -11,6 +11,7 @@
 		B397B92B285FB95600BDACC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B397B92A285FB95600BDACC6 /* ContentView.swift */; };
 		B397B92D285FB96000BDACC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B397B92C285FB96000BDACC6 /* Assets.xcassets */; };
 		B397B930285FB96000BDACC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B397B92F285FB96000BDACC6 /* Preview Assets.xcassets */; };
+		B397B937285FC4BC00BDACC6 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B397B936285FC4BC00BDACC6 /* QRCodeGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		B397B92A285FB95600BDACC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B397B92C285FB96000BDACC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B397B92F285FB96000BDACC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B397B936285FC4BC00BDACC6 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				B397B92A285FB95600BDACC6 /* ContentView.swift */,
 				B397B92C285FB96000BDACC6 /* Assets.xcassets */,
 				B397B92E285FB96000BDACC6 /* Preview Content */,
+				B397B936285FC4BC00BDACC6 /* QRCodeGenerator.swift */,
 			);
 			path = SWIFTUIQRCodeGeneratorPractice;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B397B92B285FB95600BDACC6 /* ContentView.swift in Sources */,
+				B397B937285FC4BC00BDACC6 /* QRCodeGenerator.swift in Sources */,
 				B397B929285FB95600BDACC6 /* SWIFTUIQRCodeGeneratorPracticeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
