@@ -12,6 +12,7 @@
 		B397B92D285FB96000BDACC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B397B92C285FB96000BDACC6 /* Assets.xcassets */; };
 		B397B930285FB96000BDACC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B397B92F285FB96000BDACC6 /* Preview Assets.xcassets */; };
 		B397B937285FC4BC00BDACC6 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B397B936285FC4BC00BDACC6 /* QRCodeGenerator.swift */; };
+		B3A168E6285FD4FA000E5791 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A168E5285FD4FA000E5791 /* ImageSaver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		B397B92C285FB96000BDACC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B397B92F285FB96000BDACC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B397B936285FC4BC00BDACC6 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
+		B3A168E5285FD4FA000E5791 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				B397B92C285FB96000BDACC6 /* Assets.xcassets */,
 				B397B92E285FB96000BDACC6 /* Preview Content */,
 				B397B936285FC4BC00BDACC6 /* QRCodeGenerator.swift */,
+				B3A168E5285FD4FA000E5791 /* ImageSaver.swift */,
 			);
 			path = SWIFTUIQRCodeGeneratorPractice;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				B397B92B285FB95600BDACC6 /* ContentView.swift in Sources */,
 				B397B937285FC4BC00BDACC6 /* QRCodeGenerator.swift in Sources */,
 				B397B929285FB95600BDACC6 /* SWIFTUIQRCodeGeneratorPracticeApp.swift in Sources */,
+				B3A168E6285FD4FA000E5791 /* ImageSaver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +277,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SWIFTUIQRCodeGeneratorPractice/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs permission to save your codes to your library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +306,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SWIFTUIQRCodeGeneratorPractice/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs permission to save your codes to your library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
