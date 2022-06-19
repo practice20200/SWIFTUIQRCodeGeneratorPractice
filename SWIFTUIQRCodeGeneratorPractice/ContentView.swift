@@ -8,9 +8,60 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var urlInput: String = ""
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            GeometryReader{ geometry in
+                VStack{
+                    HStack{
+                        TextField("Enter url: ", text: $urlInput)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .textContentType(.URL)
+                            .keyboardType(.URL)
+                        
+                        Button("Generate") {
+                            
+                        }
+                        .disabled(urlInput.isEmpty)
+                        .padding(.leading)
+                    }
+                    
+                    Spacer()
+                    
+                    EmptyStateView(width: geometry.size.width)
+                    
+                    Spacer()
+                    
+                }
+                .padding(0)
+                .navigationBarTitle("QR Code")
+            }
+        }
+        
+        
+    }
+}
+
+struct EmptyStateView: View {
+    let width: CGFloat
+    
+    private var imageLength: CGFloat {
+        width / 2.5
+    }
+    
+    var body: some View {
+        VStack{
+            Image(systemName: "qrcode")
+                .resizable()
+                .frame(width: imageLength, height: imageLength)
+            
+            Text("Create your own QR code")
+                .padding(.top)
+        }
+        
+        .foregroundColor(Color(uiColor: .systemGray))
     }
 }
 
