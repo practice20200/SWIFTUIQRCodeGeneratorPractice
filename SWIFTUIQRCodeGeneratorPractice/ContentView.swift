@@ -53,10 +53,24 @@ struct ContentView: View {
                     Image(systemName: "square.and.arrow.down")
                 }
                     .disabled(qrCode == nil))
+                .alert(item: $imageSaver.saveResult) { saveResult in
+                    return alert(forSaveStatus: saveResult.saveStatus)
+                }
             }
         }
-        
-        
+    }
+    private func alert(forSaveStatus saveStatus: ImageSaveStatus) -> Alert {
+        switch saveStatus {
+        case .success:
+            return Alert(title: Text("Success"), message: Text("The QR code was saved to your library."))
+        case .error:
+            return Alert(title: Text("Oops"), message:Text("An error occured while saving your QRcode."))
+        case .libraryPermissionDenied:
+            return Alert(title: Text("Oops"), message: Text("this app needs permission to add photos to your library."), primaryButton: .cancel(Text("OK")), secondaryButton: .default(Text("Open settings."), action: {
+                guard let settingURL = URL(string: UIApplication.openSettingsURLString) else { return }
+                UIApplication.shared.open(settingURL)
+            }))
+        }
     }
 }
 
